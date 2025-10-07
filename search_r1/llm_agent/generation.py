@@ -516,7 +516,8 @@ class LLMGenerationManager:
                                                                                "content": responses[i]}))
 
         model = random.choice(['Qwen2.5-72B-Instruct'])
-        client = OpenAI(base_url='http://10.1.0.55:8088/v1', api_key='empty')
+        # replace your persuader here
+        client = OpenAI(base_url='http://127.0.0.1:8088/v1', api_key='empty')
         if last_turn:
             results = [make_decision_prompt for message in messages]
         else:

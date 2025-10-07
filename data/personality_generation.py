@@ -32,7 +32,7 @@ class LLMEmbeddingExtractor:
         return embeddings
 
 all_personality = []
-with open('/cpfs04/user/sunjingwei/code/Search-R1/data/original_data/sft_dataset.json') as f:
+with open('data/original_data/sft_dataset.json') as f:
     original_data = json.load(f)
 
 for data in original_data:
@@ -69,7 +69,7 @@ for i in range(N):
     each_cluster = [all_personality[i] for i, item in enumerate(id_personality) if item]
     personality_clusters.append(each_cluster)
 
-client = OpenAI(base_url='http://35.220.164.252:3888/v1', api_key='sk-ixMcAoleUYS5j0lzkecUVyqQ8M3pkIOPbDPWfNkfjoQJtgCT')
+client = OpenAI(base_url='###', api_key='###')
 final_n_personality = []
 for each_cluster in personality_clusters:
     content = '帮助我总结以下个性：\n'
@@ -85,7 +85,7 @@ for each_cluster in personality_clusters:
         )
     ans = response.choices[0].message.content.strip()
     final_n_personality.append(ans)
-with open(f'/cpfs04/user/sunjingwei/code/Search-R1/data/original_data/{target_model}-personality.json', "w") as f:
+with open(f'data/original_data/{target_model}-personality.json', "w") as f:
     json.dump(final_n_personality, f, indent=4, ensure_ascii=False)
     
 

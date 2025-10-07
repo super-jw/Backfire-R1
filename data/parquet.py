@@ -34,7 +34,7 @@ if __name__ == '__main__':
     The debate graph represents the opinion of the judge, so its root statement is 'neg'
     '''
     parser = argparse.ArgumentParser()
-    parser.add_argument('--base_dir', default='/cpfs04/user/sunjingwei/code/Search-R1/data/llama3.1-8b')
+    parser.add_argument('--base_dir', default='data/llama3.1-8b')
     args = parser.parse_args()
 
     data_source = "debate"

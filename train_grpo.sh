@@ -1,32 +1,17 @@
 export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5
 export DATA_DIR='data/nq_search'
 
-WAND_PROJECT='Search-R1'
-
-# export BASE_MODEL='meta-llama/Llama-3.2-3B'
-# export EXPERIMENT_NAME=nq-search-r1-grpo-llama3.2-3b-em
-# export BASE_MODEL='meta-llama/Llama-3.2-3B-Instruct'
-# export EXPERIMENT_NAME=nq-search-r1-grpo-llama3.2-3b-it-em
-# export BASE_MODEL='meta-llama/Llama-3.1-8B'
-# export EXPERIMENT_NAME=nq-search-r1-grpo-llama3.1-8b-em
-# export BASE_MODEL='meta-llama/Llama-3.1-8B-Instruct'
-# export EXPERIMENT_NAME=nq-search-r1-grpo-llama3.1-8b-it-em
+WAND_PROJECT='Backfire-R1'
 
 export BASE_MODEL='/cpfs04/user/sunjingwei/code/LLaMA-Factory/output/llama3_lora_sft'
-export EXPERIMENT_NAME=nq-search-r1-grpo-llama3.1-8b-em
-# export BASE_MODEL='Qwen/Qwen2.5-3B-Instruct'
-# export EXPERIMENT_NAME=nq-search-r1-grpo-qwen2.5-3b-it-em
-# export BASE_MODEL='Qwen/Qwen2.5-7B'
-# export EXPERIMENT_NAME=nq-search-r1-grpo-qwen2.5-7b-em
-# export BASE_MODEL='Qwen/Qwen2.5-7B-Instruct'
-# export EXPERIMENT_NAME=nq-search-r1-grpo-qwen2.5-7b-it-em
-# export WANDB_MODE=offline
-export WANDB_http_proxy="https://yuyi:HZOr6dMHhBUWrREPWkQ0UjnWRVLmsOiDzHAQCqz5VVbU8jhFtXOzPPVZ2C2n@aliyun-proxy.pjlab.org.cn:13128" 
-export WANDB_https_proxy="https://yuyi:HZOr6dMHhBUWrREPWkQ0UjnWRVLmsOiDzHAQCqz5VVbU8jhFtXOzPPVZ2C2n@aliyun-proxy.pjlab.org.cn:13128" 
-export WANDB_HTTP_PROXY="https://yuyi:HZOr6dMHhBUWrREPWkQ0UjnWRVLmsOiDzHAQCqz5VVbU8jhFtXOzPPVZ2C2n@aliyun-proxy.pjlab.org.cn:13128" 
-export WANDB_HTTPS_PROXY="https://yuyi:HZOr6dMHhBUWrREPWkQ0UjnWRVLmsOiDzHAQCqz5VVbU8jhFtXOzPPVZ2C2n@aliyun-proxy.pjlab.org.cn:13128"
-export WANDB_API_KEY=2e1bf5b2f2d480cb7b954b076ade8a2924dfc1e6
-export WANDB_KEY=2e1bf5b2f2d480cb7b954b076ade8a2924dfc1e6
+export EXPERIMENT_NAME=backfire-r1-grpo-llama3.1-8b
+
+export WANDB_http_proxy=###
+export WANDB_https_proxy=###
+export WANDB_HTTP_PROXY=###
+export WANDB_HTTPS_PROXY=###
+export WANDB_API_KEY=###
+export WANDB_KEY=###
 # set -x
 export VLLM_ATTENTION_BACKEND=XFORMERS # vllm + qwen2-7b with flash_attn has some issues
 DATA_DIR=data/llama3.1-8b

@@ -20,7 +20,7 @@ tensorflow/my_graph/*
 # data
 sft/output/*
 sft/data/*
-
+data/original_data
 # Distribution / packaging
 .Python
 build/
