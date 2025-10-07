@@ -6,7 +6,7 @@ by *Jingwei Sun, Yi Yu, Jingjing Qu, Jia Xu and Jing Shao*.
 
 
 <div align="center">
-  <img src="public/Backfire-R1.png" alt="logo" width="300"/>
+  <img src="public/Backfire-R1.png"/>
 </div>
 
 **Backfire-R1** is a reinforcement learning framework designed for identifying and mitigating persuasion vulnerabilities in LLM agents. Built upon [Search-R1](https://github.com/PeterGriffinJin/Search-R1), Backfire-R1 helps LLMs build persuasion resistance and better align with user objective by enabling them to learn the reasoning logic of humans with different personalities in persuasion scenarios.
@@ -76,6 +76,9 @@ The implementation is relatively inefficient and may benefit from optimization. 
 
 ### Reward Design
 Refer to `verl/trainer/main_ppo.py RewardManager`.
+
+### Personality
+Refer to `data/llama3.1-8b & qwen2.5-7b`.
 
 ## Acknowledge
 The implementation of Backfire-R1 is built upon [veRL](https://github.com/volcengine/verl) and [Search-R1](https://github.com/PeterGriffinJin/Search-R1). 
