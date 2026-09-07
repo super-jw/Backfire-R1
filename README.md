@@ -2,7 +2,7 @@
 
 Code for "[Backfire-R1: Identifying and Mitigating Persuasion Vulnerabilities in LLM Agents]()" 
 
-by *Jingwei Sun, Yi Yu, Jingjing Qu, Jia Xu and Jing Shao*.
+by *Jingwei Sun, Yi Yu, Jingjing Qu, Hanxi Zhu, Jia Xu, Jing Shao*.
 
 
 <div align="center">
@@ -87,10 +87,12 @@ We sincerely appreciate the efforts of these teams for their contributions to op
 ## Citations
 If you find this repo or the paper useful, please cite:
 ```bibtex
-@article{sun2025backfirer1,
-  title={Backfire-R1: Identifying and Mitigating Persuasion Vulnerabilities in LLM Agents},
-  author={Jingwei Sun, Yi Yu, Jingjing Qu, Jia Xu, Jing Shao},
-  journal={},
-  year={2025}
+@inproceedings{
+anonymous2026backfirer,
+title={Backfire-R1: Identifying and Mitigating Persuasion Vulnerabilities in {LLM} Agents},
+author={Jingwei Sun, Yi Yu, Jingjing Qu, Hanxi Zhu, Jia Xu, Jing Shao},
+booktitle={The 2026 Conference on Empirical Methods in Natural Language Processing},
+year={2026},
+url={https://openreview.net/forum?id=ftNL0n1SlM}
 }
 ```
