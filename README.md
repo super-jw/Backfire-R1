@@ -88,7 +88,7 @@ We sincerely appreciate the efforts of these teams for their contributions to op
 If you find this repo or the paper useful, please cite:
 ```bibtex
 @inproceedings{
-anonymous2026backfirer,
+sun2026backfirer,
 title={Backfire-R1: Identifying and Mitigating Persuasion Vulnerabilities in {LLM} Agents},
 author={Jingwei Sun, Yi Yu, Jingjing Qu, Hanxi Zhu, Jia Xu, Jing Shao},
 booktitle={The 2026 Conference on Empirical Methods in Natural Language Processing},
